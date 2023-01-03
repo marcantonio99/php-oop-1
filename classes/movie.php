@@ -13,6 +13,14 @@ class Movie {
         $this->genre = $genre;
         $this->age = $age;
     }
+
+    public function perTutti(){
+        if( $this->age > 18 ){
+            return "La visione è stata autorizzata ";
+        }else{
+            return "La visione di questo film è riservata ad un pubblico adulto";
+        }
+    }
 }
 
 ?>
