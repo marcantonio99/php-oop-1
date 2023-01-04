@@ -15,10 +15,10 @@ class Movie {
     }
 
     public function perTutti(){
-        if( $this->age > 18 ){
-            return "La visione è stata autorizzata ";
+        if( $this->age >= 18 ){
+            return "La visione è riservata ad un pubblico adulto";
         }else{
-            return "La visione di questo film è riservata ad un pubblico adulto";
+            return "La visione è stata autorizzata";
         }
     }
 }
